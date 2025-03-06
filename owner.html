@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- REQUIRED: head element 2/8/25-->
+  <head>
+    <!-- REQUIRED: complete metadata element 2/8/25-->
+    <!-- REQUIRED: metadata charset 2/8/25-->
+    <meta charset="UTF-8">
+    <!-- REQUIRED: metadata viewport 2/8/25-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila :: Contact the Owner</title>
+    <!-- REQUIRED: metadata description 2/8/25-->
+    <meta name="description" content="Page dedicated to contacting the owner of the vehicle this website is centered around.">
+    <!-- REQUIRED: metadata keywords 2/8/25-->
+    <meta name="keywords" content="GTO, car, restoration, owner">
+    <!-- REQUIRED: metadata author 2/8/25-->
+    <meta name="author" content="James Hutchison">
+    <!-- REQUIRED: metadata stylesheet 2/8/25-->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<!-- My father has asked if I could help him design a website detailing the 23 year restoration of his 1967 Pontiac GTO named Sheila. I've changed my final project to fit this instead. -->
+<!-- REQUIRED: body element 2/8/25 -->
+  <body>
+    <header>
+        <!-- REQUIRED: nav element! 2/8/25-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="sheila.html">About Sheila</a></li>
+        <li><a href="owner.html">Contact the Owner</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <!-- REQUIRED: main element 2/8/25-->
+    <main>
+      <!--REQUIRED: form element, 3/3/25-->
+      <form action="#" method="post">
+        <!--REQUIRED: fieldset element 3/3/25-->
+        <fieldset>
+          <!--REQUIRED: legend 3/3/25-->
+            <legend>Contact the Owner</legend>
+            <p class="defaultwhite">* : Indicates a required field</p>
+            <label for="name">* Name:</label>
+            <!--REQUIRED: input element 1 of 3, 3/3/25-->
+            <!--REQUIRED: required, 3/3/25-->
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">* Email:</label>
+            <!--REQUIRED: input element 2 of 3, 3/3/25-->
+            <input type="email" id="email" name="email" required>
+
+            <label for="content">* Message:</label>
+            <!--REQUIRED: input element 3 of 3, 3/3/25-->
+            <input type="text" id="content" name="content" required>
+
+            <label for="referred-by">How did you hear about Sheila?</label>
+            <!--REQUIRED: select 3/3/25-->
+            <select id="referred-by" name="referred-by">
+                <option value="friend">Friend of the owner</option>
+                <option value="social-media">Social media post</option>
+                <option value="search-engine">Looked it up</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="checkbox-container">
+              <!--REQUIRED: checkbox 3/3/25-->
+                <label for="subscribe">Would you like to receive news regarding Sheila?</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+
+            </div>
+            <div class="button-container">
+              <!--REQUIRED: submit button 3/3/25-->
+                <button type="submit">Submit</button>
+                <!--REQUIRED: reset button 3/3/25-->
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+    </main>
+<!-- REQUIRED: footer element 2/8/25-->
+
+    <footer>
+      <!-- REQUIRED: special character element 2/8/25-->
+    Copyright &copy; 2025 James Hutchison
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="sheila.html">About Sheila</a></li>
+        <li><a href="owner.html">Contact the Owner</a></li>
+      </ul>
+    </nav>
+    </footer>

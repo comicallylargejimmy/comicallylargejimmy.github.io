@@ -1,0 +1,293 @@
+/* general styling */
+html { background-color: #856b7d ;
+}
+
+body { color: #FCF5E5;
+font-family: Verdana, Arial, sans-serif;
+max-width: 1920px;
+margin: auto;
+height: 100vh;
+}
+
+header { background-size: 100% 100%;
+   color: #FCF5E5;
+   max-width: 1920px;
+}
+
+footer { text-align: center; font-size: small;
+   max-width: 1920px;
+}
+
+main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 { font-size: 36px;
+}
+
+h1, h3 { color: #FCF5E5;
+font-family: Verdana, Arial, sans-serif;
+max-width: 1080px;
+margin: auto;
+text-align: center;
+}
+
+p { color: #856b7d;
+font-family: Verdana, Arial, sans-serif;
+font-size: 14px;
+padding-left: 10px;
+}
+
+img { max-width: 55% ;
+  /*REQUIRED: border 2/8/25*/
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+font-size: 2em;
+margin-top: 5px;
+font-weight: bold;
+color: #856b7d;
+background-color: #FCF5E5;
+max-width: 55%;
+border-radius: 15px;
+padding-bottom: 5px;
+}
+
+form { width: 1080px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        border-radius: 8px;
+        margin-left: auto; margin-right: auto;
+}
+
+fieldset { padding: 10px;
+        justify-content: center;
+        display: block;
+        width: 100%;
+
+}
+
+label, input, textarea, select, button {
+        justify-content: center;
+        display: block;
+        width: 100%;
+        padding-top: 1em; padding-bottom: 1em;
+        margin-bottom: 5px;
+
+}
+
+/*nav styling */
+
+nav {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #FCF5E5;
+  padding-bottom: 20px;
+  max-width: 1920px;
+}
+
+
+ul {
+list-style-type: none;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  background-color: #FCF5E5;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline;
+  float: left;
+  background-color: #FCF5E5;
+}
+
+nav ul li a {
+  text-align: center;
+  padding: 20px;
+}
+
+/*REQUIRED: dynamic nav styling 2/8/25*/
+
+nav a:hover { color: #856b7d;
+}
+
+/* ids */
+
+#title {
+  /*placeholder*/
+}
+
+/* classes */
+
+.default {
+ color: #856b7d;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+
+}
+
+.defaultwhite {
+ color: #FCF5E5;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+
+}
+
+.story {
+ color: #856b7d;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 25px;
+  background-color: #FCF5E5;
+  border-radius: 3px;
+  display: flex;
+  flex: 1;
+  max-width: 40%;
+  overflow-wrap: break-word;
+  line-height: 32px;
+  float: right;
+  }
+
+.leftimg {
+  float: left;
+}
+
+.onehalf {
+  float: left;
+  width: 50%;
+  padding-left: 2em; padding-right: 2em;
+}
+.onehalf-right {
+  float: right;
+  width: 50%;
+  padding-left: 2em; padding-right: 2em;
+}
+
+.button-container {
+display: flex;
+justify-content: flex-start;
+gap: 10px;
+}
+
+.checkbox-container {
+display: flex;
+justify-content: flex-start;
+gap: 5px;
+        }
+
+.full {
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.center ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.center li {
+  font-size: 32px;
+}
+
+.timeline {
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.timeline img, figcaption {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/*media*/
+
+/* REQUIRED: mobile media query 3/5/25 */
+@media (max-width: 600px) {
+  main {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  img {
+  margin-left: auto; margin-right: auto;
+}
+
+  .story {
+    max-width: 100%;
+  }
+}
+
+/* REQUIRED: tablet media query 3/5/25 */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .story {
+    max-width: 60%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+/* REQUIRED: desktop media query 3/5/25 */
+@media (min-width: 1025px) {
+  main {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .story {
+    max-width: 40%;
+  }
+}
